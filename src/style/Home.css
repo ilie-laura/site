@@ -3,96 +3,94 @@
   height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-end; /* aliniere verticală jos */
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: right;
+  padding-right: 10vw;
+  padding-left: 5vw;
+  padding-bottom: 5vh;
 }
 
 .headerContainer {
+  max-width: 600px;
   width: auto;
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spațiu între elemente */
 }
 
 .headerContainer h1 {
-  justify-content: center;
-  align-items: center;
   font-size: 90px;
-  height: 60px;
   font-weight: 50;
   color: black;
+  margin: 0;
 }
 
 .headerContainer p {
-  padding: 0;
   font-size: 40px;
   font-weight: lighter;
   color: black;
+  margin: 0 0 20px 0;
 }
 
 .headerContainer button {
-  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  justify-content: center;
-  background-color: #121619;
+  background-color: #c05b1d;
   height: 50px;
   width: 180px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 20px;
 }
 
 .headerContainer button:hover {
-  background-color: #07090a;
-  cursor: pointer;
+  background-color: #743711;
   transition: 0.3s ease-in;
 }
 
 @media only screen and (max-width: 650px) {
   .home {
-    justify-content: center;
     align-items: center;
-  }
-  .headerContainer h1,
-  .headerContainer p {
+    text-align: center;
+    padding-right: 0;
   }
 
   .headerContainer {
-    margin-left: 0px;
+    margin: 0;
     border-radius: 10px;
     padding: 10px;
     width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #121619;
+    background-color: #c05b1d;
     color: white;
+    gap: 20px;
   }
 
   .headerContainer h1 {
     font-size: 40px;
-    height: 30px;
     color: white;
+    margin: 0;
   }
 
   .headerContainer p {
     font-size: 30px;
     color: white;
+    margin: 0 0 20px 0;
   }
 
   .headerContainer button {
     background-color: white;
-    color: #121619;
+    color: #c05b1d;
     margin-bottom: 30px;
   }
 
   .headerContainer button:hover {
     background-color: rgb(225, 225, 225);
-    color: #121619;
+    color: #743711;
   }
 }
