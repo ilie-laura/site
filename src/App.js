@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Home from './pages/Home';
 import {BrowserRouter as Router,Route,Routes as Switch} from 'react-router-dom';
 
@@ -12,6 +13,7 @@ function App() {
      <Switch>
       <Route path="/" exact element={<Home />} />
      </Switch>
+      <Footer />
      </Router>
     </div>
   );
